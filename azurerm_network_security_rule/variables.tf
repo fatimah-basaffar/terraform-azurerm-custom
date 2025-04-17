@@ -39,7 +39,7 @@ variable "protocol" {
   
 }
 
-variable "source_port_range " {
+variable "source_port_range" {
 
     type = string
   
