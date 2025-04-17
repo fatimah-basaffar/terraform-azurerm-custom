@@ -16,14 +16,6 @@ variable "location" {
   
 }
 
-variable "version" {
-
-    type = string
-
-    default = "12.0"
-  
-}
-
 variable "administrator_login" {
 
     type = string
