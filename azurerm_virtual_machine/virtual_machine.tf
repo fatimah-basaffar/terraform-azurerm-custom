@@ -31,4 +31,7 @@ resource "azurerm_linux_virtual_machine" "virtual_machine" {
         username   = var.vm_admin_username
         public_key = var.admin_ssh_key
     }
+
+    custom_data = var.custom_data
+
 }
