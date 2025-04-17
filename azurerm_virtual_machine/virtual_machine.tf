@@ -23,7 +23,7 @@ resource "azurerm_linux_virtual_machine" "virtual_machine" {
         version = var.source_image_reference_version
     }
 
-    computer_name = var.virtual_machine_name
+    computer_name = var.computer_name
     
     admin_username = var.vm_admin_username
 

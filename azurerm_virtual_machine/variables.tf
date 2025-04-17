@@ -84,7 +84,7 @@ variable "source_image_reference_version" {
 
 }
 
-variable "virtual_machine_name" {
+variable "computer_name" {
 
     type = string
   
@@ -93,6 +93,8 @@ variable "virtual_machine_name" {
 variable "vm_admin_username" {
 
     type = string
+
+    default = "azureuser"
 
 }
 
