@@ -6,20 +6,20 @@ resource "azurerm_network_security_rule" "network_security_rule" {
 
     name = var.name
     
-    priority = var.value.priority
+    priority = var.priority
 
-    direction = var.value.direction
+    direction = var.direction
 
-    access = var.value.access
+    access = var.access
 
-    protocol = var.value.protocol
+    protocol = var.protocol
 
-    source_port_range = var.value.source_port_range
+    source_port_range = var.source_port_range
 
-    destination_port_range = var.value.destination_port_range
+    destination_port_range = var.destination_port_range
 
-    source_address_prefix = var.value.source_address_prefix
+    source_address_prefix = var.source_address_prefix
 
-    destination_address_prefix = var.value.destination_address_prefix
+    destination_address_prefix = var.destination_address_prefix
 
 }
