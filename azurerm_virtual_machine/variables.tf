@@ -84,12 +84,6 @@ variable "source_image_reference_version" {
 
 }
 
-variable "computer_name" {
-
-    type = string
-  
-}
-
 variable "vm_admin_username" {
 
     type = string
@@ -106,10 +100,8 @@ variable "vm_disable_password_authentication" {
   
 }
 
-variable "tags" {
+variable "admin_ssh_key" {
 
-    type = map(any)
+    type = string
 
-    default = null
-  
 }
