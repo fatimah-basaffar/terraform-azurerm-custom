@@ -13,3 +13,11 @@ variable "rsa_bits" {
     default = 4096
   
 }
+
+variable "filename" {
+
+    type = string
+
+    default = "vm_ssh_key.pem"
+  
+}
