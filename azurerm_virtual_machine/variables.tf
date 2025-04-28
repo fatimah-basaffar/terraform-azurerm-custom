@@ -105,9 +105,3 @@ variable "admin_ssh_key" {
     type = string
 
 }
-
-variable "custom_data" {
-    
-    type = string
-
-}
