@@ -64,7 +64,7 @@ variable "source_image_reference_offer" {
 
     type = string
 
-    default = "UbuntuServer"
+    default = "0001-com-ubuntu-server-jammy"
 
 }
 
@@ -72,7 +72,7 @@ variable "source_image_reference_sku" {
 
     type = string
 
-    default = "18.04-LTS"
+    default = "22_04-lts-gen2"
 
 }
 

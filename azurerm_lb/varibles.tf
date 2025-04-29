@@ -29,7 +29,7 @@ variable "frontend_ip_configuration_name" {
   
 }
 
-variable "public_ip_address_id" {
+variable "subnet_id" {
 
     type = string
   

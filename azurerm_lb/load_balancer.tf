@@ -6,6 +6,6 @@ resource "azurerm_lb" "load_balancer" {
 
   frontend_ip_configuration {
     name                 = var.frontend_ip_configuration_name
-    public_ip_address_id = var.public_ip_address_id
+    subnet_id = var.subnet_id
   }
 }

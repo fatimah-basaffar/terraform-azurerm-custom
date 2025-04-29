@@ -41,3 +41,10 @@ variable "is_manual_connection" {
     default = false
   
 }
+
+variable "subresource_names" {
+  
+  type = set(string)
+  default = ["sqlServer"]
+  
+}
