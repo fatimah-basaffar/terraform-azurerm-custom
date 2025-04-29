@@ -13,6 +13,3 @@ variable "sku_name" {
     type = string
     default = "Standard"
 }
-variable "public_ip_id" {
-  type        = string
-}
