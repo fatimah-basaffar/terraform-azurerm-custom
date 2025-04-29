@@ -118,12 +118,6 @@ variable "http_listener_name" {
   
 }
 
-variable "frontend_port_name" {
-
-    type = string
-  
-}
-
 variable "http_protocol" {
 
     type = string
@@ -149,12 +143,6 @@ variable "rule_type" {
 }
 
 variable "backend_address_pool_name" {
-
-    type = string
-  
-}
-
-variable "backend_http_settings_name" {
 
     type = string
   
