@@ -118,12 +118,6 @@ variable "http_listener_name" {
   
 }
 
-variable "frontend_ip_configuration_name" {
-
-    type = string
-
-}
-
 variable "frontend_port_name" {
 
     type = string
