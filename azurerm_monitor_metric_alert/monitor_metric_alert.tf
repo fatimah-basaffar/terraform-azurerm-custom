@@ -18,4 +18,5 @@ resource "azurerm_monitor_metric_alert" "alert" {
   action {
     action_group_id = var.action_group_id
   }
+  target_resource_type   = var.target_resource_type
 }

@@ -41,7 +41,3 @@ variable "target_resource_type" {
   type    = string
   default = "Microsoft.Compute/virtualMachines"
 }
-
-variable "target_resource_region" {
-  type = string
-}
