@@ -37,3 +37,11 @@ variable "threshold" {
 variable "action_group_id" {
     type = string
 }
+variable "target_resource_type" {
+  type    = string
+  default = "Microsoft.Compute/virtualMachines"
+}
+
+variable "target_resource_region" {
+  type = string
+}
