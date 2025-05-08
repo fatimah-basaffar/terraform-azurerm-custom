@@ -147,3 +147,9 @@ variable "backend_address_pool_name" {
     type = string
   
 }
+
+variable "probe_name" {
+
+    type = string
+  
+}

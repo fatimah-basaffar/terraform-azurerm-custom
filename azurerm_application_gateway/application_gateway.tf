@@ -29,12 +29,14 @@ resource "azurerm_application_gateway" "app_gateway" {
   }
 
   backend_http_settings {
-    name                  = var.backend_http_settings_name
-    cookie_based_affinity = var.cookie_based_affinity
-    path                  = var.path
-    port                  = var.http_port
-    protocol              = var.backend_protocol
-    request_timeout       = var.request_timeout
+    name                                = var.backend_http_settings_name
+    cookie_based_affinity               = var.cookie_based_affinity
+    path                                = var.path
+    port                                = var.http_port
+    protocol                            = var.backend_protocol
+    request_timeout                     = var.request_timeout
+    probe_name                          = var.probe_name
+    pick_host_name_from_backend_address = false
   }
 
   http_listener {
@@ -51,5 +53,21 @@ resource "azurerm_application_gateway" "app_gateway" {
     http_listener_name         = var.http_listener_name
     backend_address_pool_name  = var.backend_address_pool_name
     backend_http_settings_name = var.backend_http_settings_name
+  }
+
+  probe {
+    name                                      = "backend-health-probe"
+    protocol                                  = "Http"
+    host                                      = "127.0.0.1"
+    path                                      = "/"
+    interval                                  = 30
+    timeout                                   = 30
+    unhealthy_threshold                       = 3
+    pick_host_name_from_backend_http_settings = false
+    port                                      = 80
+
+    match {
+      status_code = ["200-404"]
+    }
   }
 }
